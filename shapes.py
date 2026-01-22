@@ -61,8 +61,9 @@ def area_rectangle(length:int, width:int)->int:
     Returns:
         int: The area of the rectangle.
     """
-    
-    return 0
+    area = length * width
+    return area
+
 
 
 # TODO: Complete the required shapes below
