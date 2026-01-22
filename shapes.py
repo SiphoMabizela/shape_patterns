@@ -74,7 +74,8 @@ def draw_square(height:int)->None:
         None: Prints the square pattern directly to console.
         
     """
-    pass
+    for _ in range(height):
+        print("*" * height)
 
 def draw_pyramid(height:int)->None:
     
