@@ -14,6 +14,7 @@ def area_square(side:int)->int:
     return side ** 2
 
 
+
 def area_triangle(base:int, height:int)->float:
     
     """
@@ -42,8 +43,11 @@ def area_circle(radius:int)->float:
     Returns:
         float: The area of the circle.
     """
-    
-    return 0.0
+    pi = 3.14
+    area = pi * radius * radius
+    return area
+
+
 
 def area_rectangle(length:int, width:int)->int:
     
