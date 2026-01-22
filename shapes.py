@@ -11,8 +11,7 @@ def area_square(side:int)->int:
     Returns:
         int: The area of the square.
     """
-    
-    return 0
+    return side ** 2
 
 
 def area_triangle(base:int, height:int)->float:
@@ -27,8 +26,10 @@ def area_triangle(base:int, height:int)->float:
     Returns:
         float: The area of the triangle.
     """
-    
-    return 0.0
+    area = 0.5 * base * height
+    return area
+
+
 
 def area_circle(radius:int)->float:
     
@@ -76,6 +77,8 @@ def draw_square(height:int)->None:
     """
     for _ in range(height):
         print("*" * height)
+
+
 
 def draw_pyramid(height:int)->None:
     
