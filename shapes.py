@@ -1,7 +1,6 @@
 # TODO: Complete the following functions that compute the area of the shapes below
 
-def area_square(side:int)->int:
-    
+def area_square(side:int)->int: 
     """
     Calculate the area of a square(l*l) given the length of its side.
     
@@ -15,8 +14,7 @@ def area_square(side:int)->int:
 
 
 
-def area_triangle(base:int, height:int)->float:
-    
+def area_triangle(base:int, height:int)->float: 
     """
     Calculate the area of a triangle(1/2 * b * h) given the base length and height.
     
@@ -32,8 +30,7 @@ def area_triangle(base:int, height:int)->float:
 
 
 
-def area_circle(radius:int)->float:
-    
+def area_circle(radius:int)->float: 
     """
     Calculate the area of a circle (pi * r^2) given its radius.
     
@@ -97,8 +94,11 @@ def draw_pyramid(height:int)->None:
         None: Prints the pyramid pattern directly to console.
         
     """
-    
-    pass
+    for i in range(height):
+        spaces = height - i - 1
+        stars = 2 * i + 1
+        print(" " * spaces + "*" * stars)
+
 
 def draw_triangle(height:int)->None:
     
